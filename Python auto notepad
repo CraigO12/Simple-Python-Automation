@@ -1,0 +1,53 @@
+import pyautogui as p
+import time
+
+# Opens the windows search bar
+p.press('win')
+# types word into the search bar
+p.write('word')
+# wait for three seconds
+time.sleep(3)
+# Hits enter
+p.press('enter')
+time.sleep(3)
+p.press("enter")
+# Enter the text that you want to appear in the word doc
+A = "For this assignment we decided to use python to automate some task"
+# Prints the text
+p.write(A)
+time.sleep(3)
+
+p.press('win')
+# Searches notepad in the windows search bar
+p.write('notepad')
+time.sleep(3)
+p.press('enter')
+
+time.sleep(3)
+
+# Enter text that you want to appear in the notepad
+A = """Spongebob Squarepants by lgbeard
+      .--..--..--..--..--..--.
+    .' \  (`._   (_)     _   |
+  .'    |  '._)         (_)  |
+  \ _.')\      .----..---.   /
+  |(_.'  |    /    .-\-.  \  |
+  \     0|    |   ( O| O) | o|
+   |  _  |  .--.____.'._.-.  |
+   \ (_) | o         -` .-`  |
+    |    \   |`-._ _ _ _ _\ /
+    \    |   |  `. |_||_|   |
+    | o  |    \_      \     |     -.   .-.
+    |.-.  \     `--..-'   O |     `.`-' .'
+  _.'  .' |     `-.-'      /-.__   ' .-'  
+.' `-.` '.|='=.='=.='=.='=|._/_ `-'.'
+`-._  `.  |________/\_____|    `-.'
+   .'   ).| '=' '='\/ '=' |
+   `._.`  '---------------'
+           //___\   //___
+             ||       ||
+    LGB      ||_.-.   ||_.-.
+            (_.--__) (_.--__)
+            Hi its me Spongebob"""
+
+p.write(A)
